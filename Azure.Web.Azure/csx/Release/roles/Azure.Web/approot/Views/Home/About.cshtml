@@ -1,0 +1,12 @@
+﻿@model IList<Azure.DomainModel.User>
+@{
+    ViewBag.Title = "About Us";
+}
+
+<h2>About</h2>
+<ul>
+    @foreach (var user in Model)
+    {
+        <li>@user.Name</li>
+    }
+</ul>
